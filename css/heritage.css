@@ -1,0 +1,384 @@
+*{
+	font-family: "微软雅黑";
+}
+p{
+	text-align: justify;
+}
+.hernewhead{
+	width: 100%;
+	height: 90px;
+	background: #000;
+}
+.hernewhead img{
+	margin-top: 19px;
+}
+.hernewbody{
+	background: #212121;
+	width: 100%;
+	height: 620px;
+	font-size: 0;
+	color: #FFFFFF;
+	padding: 47px 0 60px 0;
+}
+.newherleft{
+	display: inline-block;
+	width: 70%;
+	height: 103%;
+	font-size: 14px;
+	box-sizing: border-box;
+	border-right: 1px solid #CCCCCC;
+	vertical-align: top;
+	padding-top: 50px;
+}
+.leftarrow{
+    position: absolute;
+    top: 50%;
+    left: -93px;
+    margin-top: -42px;
+    cursor: pointer;
+}
+.rightarrow{
+    position: absolute;
+    top: 50%;
+    right: -93px;
+    margin-top: -42px;
+    cursor: pointer;
+}
+.inshow{
+	display: block;
+	width: 70%;
+	height: 420px;
+	background: #000000;
+	margin: auto;
+	list-style: none;
+	padding: 0;
+	position: relative;
+}
+.inshow li{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.inshow li img{
+	width: 100%;
+	height: 100%;
+}
+.newhrtright{
+	display: inline-block;
+	width: 30%;
+	font-size: 14px;
+	padding-right: 5%;
+	padding-left: 25px;
+}
+.pubman{
+    display: block;
+    width: 106px;
+    height: 28px;
+    background: #469EFB;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+.detailher{
+	margin-bottom: 45px;
+}
+.newhrtright p{
+	color: #CCCCCC;
+}
+.detailher span:nth-child(2){
+	float: right;
+}
+.detailher span:nth-child(3){
+	float: right;
+	padding-right:12px ;
+}
+.injian{
+	display: inline-block;
+    width: 95px;
+    height: 95px;
+    background: #777777;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.injian i{
+    font-size: 51px;
+    display: block;
+    margin-top: 7px;
+    color: #ccc;
+}
+.scoreher{
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	line-height: 85px;
+}
+.scoreher b{
+    color: #D40202;
+    font-size: 37px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+.watchdetail{
+	display: block;
+    width: 100%;
+    height: 35px;
+    background: #469EFB;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.watchdetail:hover{
+	background: #0B80FB;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.herstar{
+	margin-top: 20px;
+}
+.herstar strong{
+    font-weight: 500;
+    font-size: 18px;
+}
+.zuhe{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 4px;
+}
+.hershare{
+	width: 70%;
+	margin: auto;
+	    margin-top: 20px;
+}
+.hershare p{
+	display: inline-block;
+	float: right;
+}
+.hershare b{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.hershare b i{
+	margin-right: 5px;
+}
+.hernewbottom{
+    background: #383838;
+    width: 100%;
+    height: 150px;
+    padding: 10px 25px;
+}
+.her_ul_img_wrap{
+	width: 1120px;
+	margin: auto;
+	overflow: hidden;
+}
+.hernewbottom ul{
+    width: 5000px;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    left:0;
+}
+.hernewbottom ul li{
+	float: left;
+	display: inline-block;
+	width: 160px;
+	height: 120px;
+	padding: 0 2px;
+}
+.hernewbottom ul li img{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+    border: 2px solid #212121;
+}
+.hermainew{
+	width: 1176px;
+	margin: auto;
+	height: 100%;
+}
+.weizhimain{
+	position: relative;
+}
+.smallleft{
+    position: absolute;
+    color: #CCCCCC;
+    background: #505050;
+    display: block;
+    width: 27px;
+    height: 66px;
+    text-align: center;
+    line-height: 63px;
+    top: 50%;
+    margin-top: -33px;
+    left: 0px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.smallleft:hover{
+	background:#212121 ;
+}
+.smallright{
+    position: absolute;
+    color: #CCCCCC;
+    background: #505050;
+    display: block;
+    width: 27px;
+    height: 66px;
+    text-align: center;
+    line-height: 63px;
+    top: 50%;
+    margin-top: -33px;
+    right: 0px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.smallright:hover{
+	background:#212121 ;
+}
+.activenew img{
+	box-sizing: border-box !important;
+    border: 2px solid #469EFB !important;
+}
+
+.magnifier{
+	background-color: #000000;
+	position: absolute;
+    border:4px solid #e3e3e3;
+    background: #1b1b1b;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+.magnifier img{
+	position: absolute;
+}
+
+.manleft{
+	position: relative;
+	width: 100% !important;
+}
+.manhrtleft {
+    display: inline-block;
+    width: 84%;
+    font-size: 14px;
+    position: relative;
+    margin-left: 8%;
+}
+.mantitle{
+	display: inline-block;
+}
+.mantime .pubman{
+	display: inline-block !important;
+}
+.zanman{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.clear {
+	clear:both; 
+	font-size:0; 
+	height:0; 
+	line-height:0; 
+	margin:0; 
+	padding:0;
+}
+.mantime{
+	position: relative;
+}
+.zanman b {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.zanman b i {
+    margin-right: 5px;
+}
+.detailman{
+	display: inline-block;
+	width: 72%;
+	line-height: 25px;
+    margin-top: -10px;
+    height: 225px;
+    overflow: hidden;
+}
+.manhrtleft .herstar{
+	margin-top: 0 !important;
+}
+.watchdetailman {
+    display: inline-block;
+    width: 270px;
+    height: 35px;
+    background: #469EFB;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px;
+    font-size: 17px;
+    float: right;
+    margin-top: 32px;
+}
+.manjianjie{
+    display: inline-block;
+    width: 72%;
+}
+.manjianjie .injian{
+	margin-right: 10px;
+}
+.watchdetailman:hover {
+    background: #0B80FB;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.superman{
+    display: inline-block;
+    width: 235px;
+    height: 235px;
+    vertical-align: top;
+    margin-left: 37px;
+}
+.manshare{
+    display: inline-block;
+    float: right;
+    margin-top: 34px;
+}
+.zuhe:hover{
+	background: #ffffff;
+    color: #212121;
+    cursor: pointer;
+}
+.newhrt_content{
+	margin-bottom: 23px;
+}
+.backlast{
+	display: inline-block;
+    vertical-align: middle;
+    margin-top: 22px;
+    margin-left: 15px;
+    color: #469EFB;
+    font-size: 16px;
+}
+.stars1 .instars{
+	background-position: 0 50% !important;
+}
+.stars1 .instars_fix{
+	background-position: 0 50% !important;
+}
+.injian{
+	cursor: pointer;
+}

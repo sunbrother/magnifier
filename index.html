@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>赏非遗-详情</title>
+		<link href="//libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/heritage.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+	</head>
+
+	<body style="background: #000;">
+		<div class="magnifier">
+			<img src="../img/147.jpg">
+		</div>
+
+		<div class="hernewhead">
+
+			<div class="hermainew">
+				<img id="imglogo" src="../img/10000hei.png"/>
+			    <a onclick="history.back();" class="backlast">返回上一级</a>
+			</div>			
+
+		</div>
+
+		<div class="hernewbody">
+			<div class="hermainew">
+			<div class="newherleft">
+				<ul class="inshow">
+					<span class="leftarrow"><img src="../img/lefther.png"/></span>
+					<span class="rightarrow"><img src="../img/righther.png"/></span>
+					<li class="inshow_li"><img src="img/bocai1.png" /></li>
+				</ul>
+				<div class="hershare">
+					<span><b><a href="javascript:;" onclick="$('#nored').hide();$('#myred').show();"><i id="nored" class="fa fa-heart-o" style="color: #fff;"></i><i id="myred" class="fa fa-heart" style="color: red; display: none;"></i></a>48556</b>点赞</span>
+					<p>
+						分享：
+						<span class="zuhe">
+                          <i class="fa fa-qq"></i>
+                        </span>
+                        <span class="zuhe">
+                          <i class="fa fa-weibo "></i>
+                        </span>
+                        <span class="zuhe">
+                          <i class="fa fa-weixin"></i>
+                        </span>
+					</p>
+					
+				</div>
+			</div>
+			<div class="newhrtright">
+				<!--此类用做更换title-->
+				<h2 class="newhrt_title">宁波菜烹饪技艺</h2>
+				<span class="pubman">发布者：李阳</span>
+				<p class="detailher">
+					<span>2016-07-07</span>
+					<span>分享：<b>40</b></span>
+					<span>浏览：<b>60</b></span>
+				</p>
+				<!--此类用作更换content-->
+				<p class="newhrt_content">在不断的融合与创新中，名闻宁波的东福园推出了冰糖玉燕、火踵金钩翅、花菇辽参、清炖鲥鱼、冰糖甲鱼、青鱼划水、雪菜大汤黄鱼等宁波十大名菜。</p>
+				<div class="jiangjie">
+					<div class="injian">
+						<audio src="../music/heritage.mp3" preload="load"></audio>
+						<i class="fa fa-volume-up"></i>
+						<span>讲解</span>
+					</div>
+					<span class="scoreher"><b>5.0</b>分</span>
+				</div>
+				<div id="QuacorGrading" class="inline herstar stars1">
+					<strong>评分</strong>
+					<input name="1" type="button" /><input name="2" type="button" /><input name="3" type="button" /><input name="4" type="button" /><input name="5" type="button" />
+					<span id="QuacorGradingValue"><font>0</font>分</span>
+				</div>
+				
+				
+				<a href="newherdetailman.html" class="watchdetail">查看传承人</a>
+			</div>
+		</div>
+		</div>
+		<div class="hernewbottom">
+			<div class="hermainew weizhimain">
+				<span class="smallleft"><i class="fa fa-angle-left"></i></span>
+				<span class="smallright"><i class="fa fa-angle-right"></i></span>
+			<div class="her_ul_img_wrap">
+				<ul class="her_ul_img">
+					<li data-count="0"><img "0" src="img/bocai1.png"/></li>
+	             	<li data-count="1"><img  src="img/tangtuan.png"/></li>
+	             	<li data-count="2" class="activenew"><img  src="img/nanci.png"/></li>
+	             	<li data-count="3"><img  src="img/shouquan.png"/></li>
+	             	<li data-count="4"><img  src="img/dongshi.png"/></li>
+	             	<li data-count="5"><img  src="img/songshi.png"/></li>
+	             	<li data-count="6"><img  src="img/bulong.png"/></li>
+	             	<li data-count="7"><img  src="img/muqi.png"/></li>
+	             	
+	             </ul>	
+			</div>
+			</div>
+		</div>
+	</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="js/magnifier.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+(function($){
+	$(function(){
+		var showImg = $('.inshow_li img');
+		var originImg = $('.magnifier img');
+		var magnifier = $('.magnifier');
+		var scale = 1.5;
+		var demo = Magnifier;
+		demo.init(showImg,magnifier);
+		
+		var locationHref=window.location.href;
+		if(locationHref.indexOf("http://ningbo.bjbsh.com:8081/")!=-1){
+			$("#imglogo").attr("src","../img/10000hei.png");
+		}else if(locationHref.indexOf("http://jangdong.bjbsh.com:8081/")!=-1){
+			$("#imglogo").attr("src","../img/10001hei.png");
+		}else if(locationHref.indexOf("http://baihe.bjbsh.com:8081/")!=-1){
+			$("#imglogo").attr("src","../img/10012hei.png");
+		}
+		
+		
+		demo.addClick({
+			'leftarrow'    : $('.leftarrow'),
+			'rightarrow'   : $('.rightarrow'),
+			'smallleft'    : $('.smallleft'),
+			'smallright'   : $('.smallright'),
+			'her_img_ul'   : $('.her_ul_img'),
+			'li_imgs'      : $('.her_ul_img li'),
+			'activeClass'  : 'activenew',
+			'oneColNum'    : 7,
+			'oneColLength' : parseInt($('.her_ul_img_wrap').width()),
+			'bigImg'       : $('.inshow_li img'),
+			'magnifierImg' : $('.magnifier img'),
+			'scale'        : scale,
+			'text'		   : [ {'title':'宁波菜烹饪技艺',
+							    'content':'“中华老字号” 东福园始建于民国二十二年（公元1933年）。徽州人吴子昭集资6000银元、面临三江口开设菜馆，取福如东海、吉祥之意，定店名“东福园”。一道一道地进行精细加工，使色、香、味更为考究。'
+							   },
+							   {'title':'宁波汤团制作技艺',
+							    'content':'宁波人在春节早晨都有合家聚坐共进汤团的习俗。“缸鸭狗”由宁波汤圆的创始人江定法在1926年筹集开设。他年少时，在保证原有风味的同时，制作出少了油腻的猪油汤团。'
+							   },
+							   {'title': '四明南词',
+							   	'content':'"四明南词俗称“宁波文书”，属弹词类。由于词章华丽和曲调优雅，四明南词为士大夫们所欣赏，茶坊，多在寿诞、喜庆的堂会上演唱据老艺人传说，清朝乾隆皇帝下江南曾到宁波，并在白衣寺章状元家住过。"'
+							   },
+							   {'title':'寿全斋中药文化',
+							    'content':'"宁波寿全斋药店创设于清乾隆三十五年（公元1770年），创始人为王立鳌和孙将壳（后孙退出，代代相传，解放后历经公私合营、股份制企业等，现为民营公司），原店址在最繁华的今中山东路56号。'
+							   },
+							   {'title':'董氏儿科',
+							    'content':'董氏儿科历史渊远，历经七代，其医术名蜚海内外，特别第四代传人董廷瑶老先生被誉为当代中医儿科之泰斗。他在八十多年的中医临床数百万人次的治疗生涯中，为广大儿童身心健康，是董氏儿科的真正奠基人。'					
+							   },
+							   {'title':'宋氏妇科',
+							    'content':' 宁波宋氏妇科起源甚古，由始祖宋广平世居鄞州之湘。在宋家妇科专家中，多次出现过出类拔萃的医家，无论是医术、医德均称誉一时，如宋紫清各以其精湛的医技，把祖传的家业推向一个个崭新的高峰。'
+							   },
+							   {'title':'奉化布龙',
+							   	'content':'奉化布龙是浙江省奉化市的汉族民俗舞蹈。因起源于奉化而得名，是全国很有影响的代表性龙舞之一。传说龙能行云布雨、消灾降福，象征祥瑞，所以以舞龙的方式来祈求平安和丰收就成为全国各地汉族的一种习俗。'
+							   },
+							   {'title':'朱金漆木雕',
+							   	'content':'宁波朱金木雕，又名“金漆木雕”，是雕与漆并重的汉族传统工艺。构图特点主要吸取汉族民间绘画和文人山水花鸟的优点，并刻有诗句，题款和印章。造型古典、生动，刀法浑厚，金彩相间、绚烂富丽。'
+							   }
+							 ],
+			'textContainer': {'title':$('.newhrt_title'),'content':$('.newhrt_content')},
+			'audio'        : $('audio')
+		});
+	})
+	
+	//五角星
+	$(function(){
+		var wrap = $('#QuacorGrading');
+		var stars = $('#QuacorGrading input')
+		console.log(stars);
+		var name = 0;
+		wrap.delegate('input','mouseover mouseout click',function(e){
+			if(e.type == 'mouseover'){
+				stars.each(function(){
+					console.log($(this));
+					$(this).removeClass('instars_fix');
+				})
+				name = parseInt(e.target.name);
+				console.log(name);
+				for(var i = 0; i < name; i++){
+					$(stars[i]).addClass('instars');
+				}	
+			}else if(e.type =='mouseout'){
+				console.log('out');
+				stars.each(function(){
+					console.log($(this));
+					$(this).removeClass('instars');
+				})
+			}else if(e.type == 'click'){
+				stars.each(function(){
+					console.log($(this));
+					$(this).removeClass('instars_fix');
+				})
+				name = parseInt(e.target.name);
+				console.log(name);
+				for(var i = 0; i < name; i++){
+					$(stars[i]).addClass('instars_fix');
+				}	
+				
+			}
+			
+		});
+	});
+	//播放音频
+	$(function(){
+		var target = $('.injian');
+		var source = $('audio');
+		console.log(source);
+		var i = 1;
+		target.click(function(){
+			if(i){
+				source[0].play();
+				i = 0;			
+			}else{
+				source[0].pause();
+				i = 1;
+			}
+		});
+		source.on('ended',function(){
+			source.load();
+		});
+	});
+})(jQuery);
+	
+</script>
+</html>
